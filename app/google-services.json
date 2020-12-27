@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1092480996600",
+    "project_id": "ci-cd-864ea",
+    "storage_bucket": "ci-cd-864ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092480996600:android:a28c6e3448ee17dd5e570d",
+        "android_client_info": {
+          "package_name": "com.rezk.ci_cddemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092480996600-shjv5nasnv1vncfkn06dl3umk8354fhu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rezk.ci_cddemo",
+            "certificate_hash": "dd3df9eca72a6aec7308f8bafa471b9c091bd7d9"
+          }
+        },
+        {
+          "client_id": "1092480996600-p89dadv26tvli1fenv2l1v9slf65ms3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyXlWvYiAhRikDdk_Ff27tOexn__zjjwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092480996600-p89dadv26tvli1fenv2l1v9slf65ms3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
