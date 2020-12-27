@@ -1,7 +1,11 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 
+plugins {
+    id("com.android.application")
+    id("kotlin-android")
+    id("kotlin-android-extensions")
+    id("com.google.firebase.appdistribution")
+    id("com.google.gms.google-services")
+}
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -21,6 +25,14 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
+        getByName("debug") {
+            firebaseAppDistribution {
+                serviceCredentialsFile="./firebase_private_key.json"
+                releaseNotes="First publish"
+                groups="internal-tester"
+            }
+        }
     }
 }
 
@@ -33,5 +45,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation platform('com.google.firebase:firebase-bom:26.2.0')
 
 }
